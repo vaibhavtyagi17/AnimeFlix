@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animeflix- Watch Anime anywhere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+        function toggleAnswer(element) {
+            const question = element;
+            const answer = element.nextElementSibling;
+            question.style.display = "none"; 
+            answer.style.display = "block"; 
+        }
+
+        function showQuestion(element) {
+            const answer = element.parentElement;
+            const question = answer.previousElementSibling;
+            answer.style.display = "none"; 
+            question.style.display = "block"; 
+        }
+    </script>
+    <div class="main">
+        <nav>
+            <span><img width="100" src="assets/images/logo.svg" alt=""></span>
+            <div>
+                <button class="btn">English</button>
+                <button class="btn btn-red-sm">Sign In</button>
+            </div>
+        </nav>
+        <div class="box">
+        </div>
+        <div class="hero">
+            <span>Enjoy all new anime for FREE</span>
+            <span>Join today. Cancel never</span>
+            <span>Ready to watch? Enter your email to create or restart your membership.</span>
+            <div class="hero-buttons">
+                <input type="text" placeholder="Email Address">
+                <button class="btn btn-red">Get Started &gt;</button>
+            </div>
+        </div>
+
+        <div class="separation"></div>
+
+    </div>
+
+    <section class="first">
+        <div>
+            <span>Your Fav Anime</span>
+            <span>Escape reality, embrace fantasy—watch anime, live the story!</span>
+        </div>
+
+        <div class="secImg">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+            <video src="ani.mp4"
+                autoplay loop muted></video>
+        </div>
+    </section>
+    <div class="separation"></div>
+
+    <section class="first second">
+
+        <div class="secImg">
+            <img style="width: 500px; margin-right: 20px;"src="assets/images/medium-anime-black-clover-asta-black-clover-yami-sukehiro-yuno-original-imagb8cewwgeyjww.webp" alt="">
+        </div>
+        <div>
+            <span>Immerse yourself in the world of anime</span>
+            <span>Download episodes and enjoy your adventures offline!</span>
+        </div>
+    </section>
+
+    <div class="separation"></div>
+    <section class="first third">
+        <div>
+            <span>Step into the anime multiverse! </span>
+            <span>Stream epic battles, heartwarming stories, and limitless adventures on any device, anytime!</span>
+        </div>
+
+        <div class="secImg">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+            <video src="assets/videos/One-Punch-Man-Blast-GIF-One-Punch-Man-Blast-Saitama-Discover-_-Share-GIFs.m4v"
+                autoplay loop muted></video>
+        </div>
+    </section>
+    <div class="separation"></div>
+
+
+    <section class="first second">
+
+        <div class="secImg">
+            <img style="width: 500px; margin-right: 20px;" src="assets/images/1725110993.89375.129908.jpg" alt="">
+
+
+
+        </div>
+        <div>
+            <span>Explore our collection</span>
+            <span>Including fan-service-packed anime tailored for dedicated fans!</span>
+        </div>
+    </section>
+
+    <div class="separation"></div>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faqbox">
+            <div class="question" onclick="toggleAnswer(this)">Q: What is anime?</div>
+            <div class="answer">
+                Anime refers to Japanese animated series or films, known for their vibrant art styles and diverse genres.
+                <div class="show-question" onclick="showQuestion(this)">Show Question</div>
+            </div>
+        </div>
+        <div class="faqbox">
+            <div class="question" onclick="toggleAnswer(this)">Q: Where can I watch anime?</div>
+            <div class="answer">
+                You can watch anime on popular streaming platforms like Crunchyroll, Funimation, and Netflix.
+                <div class="show-question" onclick="showQuestion(this)">Show Question</div>
+            </div>
+        </div>
+        <div class="faqbox">
+            <div class="question" onclick="toggleAnswer(this)">Q: What are some must-watch anime?</div>
+            <div class="answer">
+                Some popular recommendations include *Attack on Titan*, *Naruto*, *Demon Slayer*, and *My Hero Academia*.
+                <div class="show-question" onclick="showQuestion(this)">Show Question</div>
+            </div>
+
+        </div>
+        <div class="faqbox">
+            <div class="question" onclick="toggleAnswer(this)">Q: Why to use AnimeFlix</div>
+            <div class="answer">
+                Dumbbb it is free of cost.
+                <div class="show-question" onclick="showQuestion(this)">Show Question</div>
+            </div>
+
+        </div>
+    </section>
+    <div class="separation"></div>
+
+    <footer>
+        <div class="questions">
+            Questions? Call 000-800-919-1694
+        </div>
+        <div class="footer">
+            <div class="footer-item"> 
+                <a href="faq">Investor Relations</a>
+                <a href="faq">Jobs</a>
+                <a href="faq">Ways to Watch</a>
+                <a href="faq">Terms of Use</a>
+            </div>
+
+            <div class="footer-item"> 
+                <a href="faq">Help Centre</a>
+                <a href="faq">Account</a>
+                <a href="faq">Speed Test</a>
+                <a href="faq">Legal Notices</a>
+            </div>
+            <div class="footer-item">
+                <a href="faq">Media Centre</a>
+                <a href="faq">Privacy</a>
+                <a href="faq">Cookie Preferences</a> 
+                <a href="faq">Corporate</a>
+            </div>
+
+            <div class="footer-item">
+                <a href="faq">Contact Us</a>
+                <a href="faq">Speed Test</a> 
+                <a href="faq">Legal Notices</a> 
+                <a href="faq">Only on Netflix</a>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+
+</html>
